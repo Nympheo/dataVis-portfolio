@@ -16,7 +16,7 @@ const colors = ['#F40000', '#FCA311','#EDF2F4','#8D99AE', '#2D2F49'];
       .attr("stroke-width", 30)
       .attr("stroke-linejoin", "round")
     .selectAll("path")
-    .data(["cyan", "magenta", "yellow"])
+    .data(["#F40000", '#FCA311', "#2D2F49"])
     .enter().append("path")
       .attr("stroke", function(d) { return d; })
       .style("mix-blend-mode", "darken")
@@ -253,29 +253,29 @@ let text =  bar.append("text")
       .attr("text-anchor", "middle")
       .attr('class', 'text')
       .attr('font-size', '13')
-      .text(d => d); 
-    console.log(bar);
-svg.on('click', function(){
-    console.log('click');
-    data =  [...new Array(14)]
-      .map(() => Math.round(Math.random() * 90 + 5));
+      .text(d => d);
 
-    bar.data(data);
-    console.log(bar);
-    rects.transition()
-       .duration(1000)
-       .attr('y', d => y(d))
-       .attr('height', d => height - y(d));
-
-    text.text('');
-    text =  bar.append("text")
-          .transition()
-          .delay(500)
-          .duration(500)
-          .attr("y", d => y(d) - 10 )
-          .text(d => d);
-
-})
+// svg.on('click', function(){
+//     console.log('click');
+//     data =  [...new Array(14)]
+//       .map(() => Math.round(Math.random() * 90 + 5));
+//
+//     bar.data(data);
+//     console.log(bar);
+//     rects.transition()
+//        .duration(1000)
+//        .attr('y', d => y(d))
+//        .attr('height', d => height - y(d));
+//
+//     text.text('');
+//     text =  bar.append("text")
+//           .transition()
+//           .delay(500)
+//           .duration(500)
+//           .attr("y", d => y(d) - 10 )
+//           .text(d => d);
+//
+// })
 
 })();
 //*******************SECTION 6*****STREAMGRAPH***********
