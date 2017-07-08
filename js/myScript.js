@@ -16,7 +16,7 @@ const colors = ['#F40000', '#FCA311','#EDF2F4','#8D99AE', '#2D2F49'];
       .attr("stroke-width", 30)
       .attr("stroke-linejoin", "round")
     .selectAll("path")
-    .data(["rgba(#ee1111, 0.42)", 'rgba(#fca310, 0.43)', "#2D2F49"])
+    .data(["rgba(238, 17, 17, 0.46)", 'rgba(252, 163, 16, 0.43)', "#2D2F49"])
     .enter().append("path")
       .attr("stroke", function(d) { return d; })
       .style("mix-blend-mode", "darken")
