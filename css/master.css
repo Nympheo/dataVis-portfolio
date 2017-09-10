@@ -53,7 +53,7 @@ h1 {
 
 header p {
   position: relative;
-  margin: 1px;
+  margin: -1px;
   left: -49px;
   top: 1px;
   padding: 0; }
